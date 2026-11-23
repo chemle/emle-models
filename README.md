@@ -1,9 +1,8 @@
 # emle-models
 
-Model files and resources for EMLE. These are automatically cloned and managed
-by `pygit2` when using the [emle-engine](https://github.com/chemle/emle-engine) package.
-Alternatively, these files can be downloaded and placed within an
-`emle/resources` directory within the cloned `emle-engine` repository.
+Model files for EMLE. [emle-engine](https://github.com/chemle/emle-engine) downloads the default model, `emle-1.0.mat`, from a tagged release of this repository on first use, and caches it in the torch hub directory. Other model files can be downloaded and passed to emle-engine via the `model` option.
+
+`emle_qm7_aev.mat` is the same model as `emle-1.0.mat`, kept for emle-engine releases before 2.0.0, which clone this repository and expect that name.
 
 ## License
 
